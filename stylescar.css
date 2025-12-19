@@ -1,0 +1,617 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+/* ---------- PÁGINA PRINCIPAL  ---------- */ /* ---------- HOMEPAGE ---------- */
+
+/* NAVBAR */
+.navbar {
+    background: #FFC633;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+.search {
+    flex: 1;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    max-width: 400px;
+}
+
+.menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.login-btn {
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    background: #f7f7f7;
+}
+
+.hero-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px; 
+}
+
+
+.hero-text h1 {
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.hero-text p {
+    margin-top: 10px;
+    color: #555;
+}
+
+.btn-lanzamientos {
+    margin-top: 100px;
+    padding: 12px 25px;
+    border-radius: 20px;
+    border: none;
+    background: #333;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* HERO IMAGES */
+.hero-images {
+    display: flex;
+    gap: 25px;
+}
+
+.img-box {
+    width: 180px;
+    height: 260px;
+    background: #d9d9d9;
+    border-radius: 15px;
+    border: 2px dashed #aaa;
+}
+
+/* CARRUSEL */
+.carousel-container {
+    width: 100%;
+    height: 500px;        
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    height: 100%;           
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;           
+}
+
+.slide-img {
+    width: 100%;
+    height: 100%;
+    background-size: contain;      
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/*----FLECHAS----*/
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.4);
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+
+    opacity: 0; 
+    transition: opacity 0.3s ease, background 0.3s ease;
+}
+
+.arrow:hover {
+    opacity: 1;          
+    background: rgba(0,0,0,0.7);
+}
+
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}
+
+
+/* TÍTULOS */
+section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+/* ----- TIPOS DE FIGURAS ----- */
+.tipos-figuras {
+    padding: 30px 10%;
+    text-align: center;
+    background-size: center;
+}
+
+.figuras-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.figura-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.figura-card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.figura-card h3 {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+/* Colores tipo */
+.azul { background: #DDDEFF; }
+.verde { background: #CEFFDB; }
+.morado { background: #F5DDFF; }
+.amarillo { background: #FFECBD; }
+/* Botones */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 18px;
+    background: #000;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.btn:hover { opacity: .8; }
+
+/* ----- VOCALOID ----- */
+.vocaloid {
+    padding: 60px 10%;
+}
+
+.vocaloid-contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.vocaloid-imgs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.vocaloid-imgs img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.vocaloid-texto h2{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+
+
+
+/* ----- MUSHOKU TENSEI ----- */
+.mushoku {
+    padding: 60px 10%;
+}
+
+.mushoku-contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.mushoku-img {
+    width: 100%;
+    border-radius: 20px;
+}
+/* ---------- PROMOCIONES DOBLES ---------- */
+.promo-doble {
+    padding: 60px 10%;
+}
+
+.promo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.promo-imgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.promo-imgs img {
+    width: 100%;
+     aspect-ratio: 1 / 1;
+     object-fit: cover;
+    border-radius: 16px;
+}
+
+.promo-texto h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.promo-texto p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* ---------- FANDOM ---------- */
+.fandom {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.fandom-grid {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 55px;
+}
+
+.fandom-card {
+    text-align: center;
+}
+
+.fandom-card img {
+    aspect-ratio: 1 / 1;
+     object-fit: cover;
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+
+/* ---------- MARCAS ---------- */
+.marcas {
+  padding: 50px 10%;
+  text-align: center;
+}
+
+.marcas-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.marcas-grid img {
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+}
+
+/* ---------- AVISOS ---------- */
+.avisos {
+    padding: 90px 10%;
+    text-align: center;
+}
+
+.avisos p {
+    color: #777;
+    font-size: 14px;
+}
+/* ---------- FOOTER ---------- */
+.footer {
+    background: #6e6a6c;
+    color: #fff;
+    padding: 60px 10% 30px;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.footer-logo img {
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #e6e6e6;
+    max-width: 350px;
+}
+
+.footer-col h3 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.footer-col a {
+    display: block;
+    font-size: 14px;
+    color: #e6e6e6;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+
+.footer-col a:hover {
+    text-decoration: underline;
+}
+
+/* REDES */
+.footer-redes a img {
+    width: 24px;
+    margin-right: 12px;
+    filter: brightness(0) invert(1);
+}
+
+.footer-redes a:hover img {
+    opacity: 0.7;
+}
+
+/* MÉTODOS DE PAGO */
+.footer-pagos {
+    margin-top: 20px;
+}
+
+.footer-pagos img {
+    height: 28px;
+    margin-right: 10px;
+    border-radius: 6px;
+    background: #fff;
+    padding: 4px 8px;
+}
+
+/* COPYRIGHT */
+.footer-copy {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 13px;
+    color: #e6e6e6;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: white;
+}
+
+.menu a {
+    margin: 90px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+
+.acciones {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.login-btn {
+    text-decoration: none;
+    font-weight: bold;
+   
+}
+
+/* ---- CARRITO ---- */
+.cart-btn {
+    position: relative;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.cart-count {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+/* ================= CARRITO ================= */
+
+.carrito-container {
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.carrito-productos {
+    width: 65%;
+}
+
+.carrito-productos h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/*-----MÀGENES-----*/
+.item-img {
+    width: 200px;
+    height: 200px;
+    background: #fFfFfF;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.item-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* CLAVE para NO deformar */
+}
+}
+
+.item-info {
+    flex: 1;
+}
+
+.item-titulo {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.item-cantidad {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.item-cantidad button {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.item-delete {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: red;
+}
+
+/* RESUMEN */
+.carrito-resumen {
+    width: 35%;
+    background: #f7f7f7;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.carrito-resumen h2 {
+    margin-bottom: 20px;
+}
+
+.resumen-linea,
+.resumen-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.negativo {
+    color: red;
+}
+
+.cupon {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.cupon input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.cupon button {
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: none;
+    background: #888;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-confirmar {
+    width: 100%;
+    padding: 15px;
+    background: #6b6b6b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .carrito-container {
+        flex-direction: column;
+    }
+
+    .carrito-productos,
+    .carrito-resumen {
+        width: 100%;
+    }
+}
